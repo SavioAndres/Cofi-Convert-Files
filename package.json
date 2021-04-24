@@ -1,0 +1,24 @@
+{
+  "name": "Cofi-Convert-Files",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavioAndres/Cofi-Convert-Files.git"
+  },
+  "keywords": [],
+  "author": "Sávio Andres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SavioAndres/Cofi-Convert-Files/issues"
+  },
+  "homepage": "https://github.com/SavioAndres/Cofi-Convert-Files#readme",
+  "devDependencies": {
+    "electron": "^12.0.5"
+  }
+}
