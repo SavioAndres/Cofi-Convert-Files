@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "build": "electron-packager . --out ./dist --overwrite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +21,8 @@
   "homepage": "https://github.com/SavioAndres/Cofi-Convert-Files#readme",
   "devDependencies": {
     "electron": "^12.0.5"
+  },
+  "dependencies": {
+    "pdf2pic": "^2.1.4"
   }
 }

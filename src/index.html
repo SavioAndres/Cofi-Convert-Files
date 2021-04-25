@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cofi | Convert Files</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="css/materialize.min.css"/>
+    <link rel="stylesheet" href="css/electron-reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/pdf-formatter.css"/>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/pdf.js"></script>
+    <script src="js/pdf.worker.js"></script>
+</head>
+<body>
+    <div class="row">
+        <aside class="col s3">
+            <ul class="collection">
+                <li><a href="index.html" class="collection-item active">PDF para JPG</a></li>
+                <li><a href="#" class="collection-item">PDF para PNG</a></li>
+            </ul>
+        </aside>
+        <main class="col s9" style="margin-top: 10px;">
+            <button class="btn" id="upload-button">Selecione PDF</button> 
+            <input type="file" id="file-to-upload" accept="application/pdf" />
+
+            <div id="pdf-loader">Carregando documento...</div>
+            <div id="pdf-contents">
+                <div id="pdf-meta">
+                    <div id="pdf-buttons">
+                        <button class="btn-small" id="pdf-prev">Anterior</button>
+                        <button class="btn-small" id="pdf-next">Próximo</button>
+                    </div>
+                    <div id="page-count-container">Página <div id="pdf-current-page"></div> de <div id="pdf-total-pages"></div></div>
+                </div>
+                <canvas style="max-width: 72vw; max-height: 78vh;" id="pdf-canvas" width="2480"></canvas>
+                <div id="page-loader">Carregando página...</div>
+                <a class="btn" id="download-image" href="#">Download</a>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
